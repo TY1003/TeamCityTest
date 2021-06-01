@@ -25,6 +25,15 @@ To debug in IntelliJ Idea, open the 'Maven Projects' tool window (View
 version = "2019.1"
 
 project {
+    buildType {
+    id("HelloWorld")
+    name = "Hello world"
+    steps {
+        script {
+            scriptContent = "echo 'Hello world!'"
+        }
+    }
+  }
 
     features {
         feature {
